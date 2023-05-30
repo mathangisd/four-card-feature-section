@@ -61,12 +61,12 @@ h5 {font-size: 1.25rem;}
 
 small, .text-small {font-size: 0.8rem;}
 
-footer.attribution {
+.attribution {
     font-size: 11px;
     text-align: center;
 }
 
-footer.attribution a {
+.attribution a {
     color: hsl(26, 91%, 57%);
 }
 
