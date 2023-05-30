@@ -58,7 +58,7 @@ Users should be able to:
 I learned how to use auto-fit keyword and minmax function to make the design more responsive without using media query. Also I specified grid area using grid-lines to make it match with the given desktop design. I also used the ::after pseduo-element to draw the top border and set the overflow to hidden to get the specific border shape in the design.
 
 ### Continued-Development
-I would like to work on projects with different layouts and foucs on making them responsive.
+I would like to work on projects with different layouts and focus on making them responsive.
 
 ### Useful resources
 
