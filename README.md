@@ -36,6 +36,8 @@ Users should be able to:
 
 ![](./screenshot_fourcardfeature_mobile.png)
 
+![](./screenshot_fourcardfeature_mobile1.png)
+
 # 
 ### Links
 
@@ -53,16 +55,16 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to use repeat function, auto-fit keyword and minmax function to make the design more responsive without using media query. Also I specified grid area using grid-lines to make it match with the given design. I also used the ::after pseduo-element to draw the top border and use the overflow: hidden property to get the specific shape in the design.
+I learned how to use auto-fit keyword and minmax function to make the design more responsive without using media query. Also I specified grid area using grid-lines to make it match with the given desktop design. I also used the ::after pseduo-element to draw the top border and set the overflow to hidden to get the specific border shape in the design.
 
 ### Continued-Development
-I would like to work on projects with different layouts and foucs on making them more responsive.
+I would like to work on projects with different layouts and foucs on making them responsive.
 
 ### Useful resources
 
 -[Flexible layouts without media queries](https://blog.logrocket.com/flexible-layouts-without-media-queries/) by Dannie Vinther
 
--[Moving Items in CSS Grid Layout [Guide](https://www.hongkiat.com/blog/moving-css-grid-items/) by Preethi Ranjit i
+-[Moving Items in CSS Grid Layout [Guide](https://www.hongkiat.com/blog/moving-css-grid-items/) by Preethi Ranjit
 
 
 ## Author
