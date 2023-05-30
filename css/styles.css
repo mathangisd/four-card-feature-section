@@ -165,6 +165,7 @@ main {
     padding-bottom: 1rem;
     /* margin: 0 1rem; */
     border-radius: var(--border-radius);
+    /* border-radius: 18px; */
     display: grid;
     /* grid-template-rows: repeat(4, 1fr); */
     grid-template-rows: auto 1fr auto 2fr;
@@ -178,10 +179,37 @@ main {
     /* border-top-width: 4px; */
     /* border-top-style: solid; */
     /* position:relative */
+    /* position: relative; */
+    overflow: hidden;
+
+    
 }
 
+.top-border {
+    height: 4px;
+    width: 100vw; 
+    border-radius: 1rem;
+    /* overflow: hidden; */
+}
 
+.feature-card h4::after {
+content:" ";
+  display: block;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+ 
+  border-radius: 10px;
+  /* overflow: hidden; */
+    
+}
 
+.supervisor-card h4::after {
+    background: var(--orange);
+}
 
 .feature-card h4 {
     grid-area: a;
