@@ -8,7 +8,6 @@ padding: 0;
 box-sizing: border-box;
 }
 
-
 :root {
 
     /* Primary */
@@ -27,7 +26,6 @@ box-sizing: border-box;
 
 }
 
-
 html {font-size: 93.8%; } /*15px*/
 
 body {
@@ -37,7 +35,6 @@ body {
     line-height: 1.75;
     color: var(--grayish-blue);
 }
-
 
 p {margin-bottom: 1rem;}
 
@@ -68,10 +65,10 @@ footer.attribution {
     font-size: 11px;
     text-align: center;
 }
+
 footer.attribution a {
     color: hsl(26, 91%, 57%);
 }
-
 
 .sr-only{
     border:0; 
@@ -100,31 +97,18 @@ main {
 }
 
 .feature-card-container {
-
     display: grid;
-    /* justify-content: center; */
-    /* max-width: 400px; */
-    border: 2px solid red;
-    /* grid-template-rows: repeat(5, fr); */
     padding: 4rem 2.5rem;
     row-gap: 1rem;
 }
 
-
-
-
-
 .intro {
-    border: 2px solid salmon;
     width: min(100%, 350px);
-    /* justify-self: center; */
 }
+
 .intro h4 {
     font-weight: 200;
     text-align: center;
-    /* margin-left: 0 ; */
-    border: 2px solid red;
-    
 }
 
 .intro-bold {
@@ -134,40 +118,28 @@ main {
 
 .intro p {
     text-align: center;
-    /* margin-left: 0; */
     margin-top: 2.5rem;
-    border: 2px solid green;
     padding: 0.5rem;
 }
 
 .feature-cards {
-     min-height: 100vh;
-    /* justify-items: center; */
+    min-height: 100vh;
     margin-top: 3.5rem;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-
-     grid-template-columns: repeat(auto-fit,minmax(max(50% -20px ,min(350px, 100%)),1fr));
-
-    /* grid-template-columns: repeat (auto-fit, clamp(50%, 350px, 1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(max(50% -20px ,min(350px, 100%)),1fr));
     row-gap: 1.75rem;
 }
-
 
 .feature-card {
     background: white;
     width: min(100%, 350px);
-    /* border: 2px solid aqua; */
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 0 1.75rem;
     padding-bottom: 1rem;
-    /* margin: 0 1rem; */
     border-radius: var(--border-radius);
-    /* border-radius: 18px; */
     display: grid;
-    /* grid-template-rows: repeat(4, 1fr); */
     grid-template-rows: auto 1fr auto 2fr;
     grid-template-columns: auto;
     grid-template-areas: 
@@ -175,43 +147,38 @@ main {
     "a a a"
     "b b b"
     ". . c";
-
-    /* border-top-width: 4px; */
-    /* border-top-style: solid; */
-    /* position:relative */
     position: relative;
     overflow: hidden;
-
-    
-}
-
-.top-border {
-    height: 4px;
-    width: 100vw; 
-    border-radius: 1rem;
-    /* overflow: hidden; */
 }
 
 .feature-card h4::after {
-content:" ";
-  display: block;
-  height: 3px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: red;
- 
-  border-radius: 10px;
-  /* overflow: hidden; */
-    
+    content:" ";
+    display: block;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: red;
+    border-radius: 10px;
 }
 
 .supervisor-card h4::after {
+    background: var(--cyan);
+}
+
+.team-builder-card h4::after {
+    background: var(--red);
+}
+
+.karma-card h4::after {
     background: var(--orange);
 }
 
+.calculator-card h4::after {
+    background: var(--blue);
 
+}
 
 .feature-card h4 {
     grid-area: a;
@@ -229,6 +196,7 @@ content:" ";
 feature-card .border-shape {
     grid-area: d;
 }
+
 .feature-card h4 {
     margin-top: 2rem;
     font-weight: 600;
@@ -242,23 +210,6 @@ feature-card .border-shape {
     grid-area: b;
 }
 
-.supervisor-card {
-    border-top-color: var(--cyan);
-}
-
-.team-builder-card {
-    border-top-color: var(--red);
-}
-
-.karma-card {
-    border-top-color: var(--orange);
-}
-
-.calculator-card {
-    border-top-color: var(--blue);
-
-}
-
 
 /* 
 ===============================================
@@ -266,99 +217,49 @@ Media Query
 ===============================================
 */
 
-
 @media screen and (min-width: 778px){
-    .intro {
-    /* border: 2px solid salmon;
-    width: min(100%, 350px); */
+
+.intro {
     justify-self: center;
 }
+
 }
 
- @media screen and (min-width:1400px) {
+@media screen and (min-width:1400px) {
 
-  
-    .intro {
-        width: min(100%, 530px);
-    }
-    .intro h4 {
-        font-size: 2.5rem;
-        color: var(--very-dark-blue);
-        /* width: min(100%, 500px); */
-    }
-    .feature-cards {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        /* grid-template-rows: repeat(8, 60px); */
-        grid-template-rows: repeat(12, 60px);
-        /* grid-template-rows: repeat(6, 350px); */
-        /* margin: 0 auto; */
-        /* grid-gap: 1rem 3rem; */
-        /* grid-template-rows: masonry; */
-        /* place-items: center; */
-        /* gap: 2rem; */
-        /* margin-left: 2rem; */
-        margin-bottom: 2rem;
-        
-    }
+.intro {
+    width: min(100%, 530px);
+}
+.intro h4 {
+    font-size: 2.5rem;
+    color: var(--very-dark-blue);
+}
+.feature-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(12, 60px);
+    margin-bottom: 2rem;
+}
 
-    .supervisor-card {
-       /* grid-area: 3/3/6/1; */
-       /* grid-area: 3/2/6/1; */
-       grid-area: 3/2/7/1;
-       /* text-align: center; */
-       justify-self: end;
-       margin-right: -2.5rem;
-       
-    }
+.supervisor-card {
+    grid-area: 3/2/7/1;
+    justify-self: end;
+    margin-right: -2.5rem;   
+}
 
+.team-builder-card {
+    grid-area: 1/2/5/3;
+    justify-self: center;
+}
     
-    .feature-card h4 {
-        /* margin-top: 0; */
-    }
+.calculator-card {
+    grid-area: 3/3/7/4;
+    justify-self: start;
+    margin-left: -2.5rem;
+}
 
-     .feature-card p {
-        /* margin-top: -3rem; */
-    }
-    .team-builder-card {
-        /* grid-area: 1/2/4/3; */
-        grid-area: 1/2/5/3;
-        justify-self: center;
-    }
-    /* .karma-builder-card {
-        grid-area: 4/2/7/3;
-    } */
-
-
-    .calculator-card {
-        /* grid-area: 3/3/6/4; */
-        grid-area: 3/3/7/4;
-        justify-self: start;
-        margin-left: -2.5rem;
-    }
-
-    .karma-card {
-        /* grid-area: 3/3/6/3; */
-        /* grid-area: 4/2/7/3; */
-        grid-area: 5/2/9/3;
-        justify-self: center;
-    }
-    
-    /* .intro {
-        border: 2px solid brown;
-        max-width: 400px;
-    }
-    .feature-card-container {
-        display: grid;
-        justify-items: center;
-        
-       
-    }
-
-    .feature-cards {
-        display: grid;
-
-    
-    } */
-    
+.karma-card {    
+    grid-area: 5/2/9/3;
+    justify-self: center;
+}   
 } 
