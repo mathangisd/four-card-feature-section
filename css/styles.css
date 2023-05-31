@@ -110,7 +110,7 @@ main {
 .intro h3 {
     font-weight: 200;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
 }
 
 .intro-bold {
@@ -213,12 +213,15 @@ Media Query
 ===============================================
 */
 
-@media screen and (min-width: 778px){
+@media screen and (min-width: 775px){
 
 .intro {
     justify-self: center;
 }
 
+.intro h3 {
+    font-size: 1.9rem;
+};
 }
 
 @media screen and (min-width:1400px) {
