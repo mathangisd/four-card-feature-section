@@ -107,9 +107,10 @@ main {
     width: min(100%, 350px);
 }
 
-.intro h4 {
+.intro h3 {
     font-weight: 200;
     text-align: center;
+    font-size: 1.9rem;
 }
 
 .intro-bold {
@@ -119,7 +120,7 @@ main {
 
 .intro p {
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: -1rem;
     padding: 0.5rem;
 }
 
@@ -226,7 +227,7 @@ Media Query
     width: min(100%, 530px);
 }
 
-.intro h4 {
+.intro h3 {
     font-size: 2.5rem;
     color: var(--very-dark-blue);
 }
