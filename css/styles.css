@@ -20,6 +20,7 @@ box-sizing: border-box;
     --very-dark-blue: hsl(234, 12%, 34%);
     --grayish-blue: hsl(229, 6%, 66%);
     --very-light-gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
 
     /* border radius */
     --border-radius: 0.75rem;
@@ -132,7 +133,7 @@ main {
 }
 
 .feature-card {
-    background: white;
+    background: var(--white);
     width: min(100%, 350px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 0 1.75rem;
